@@ -1,6 +1,6 @@
 import express from 'express';
 
-const PORT = 80;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 // Endpoint raiz
-app.get('/', (req, res) => { //request y response
+app.get('/', (req, res) => { 
     res.send({
         "mensaje": 'Hola mundo desde mi primer servidor con Express'
     })

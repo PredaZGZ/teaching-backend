@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "server": "node app.js",
-    "dev": "nodemon app.js"
+    "server": "node --env-file=.env app.js",
+    "dev": "nodemon --env-file=.env app.js"
   },
   "keywords": [],
   "author": "",

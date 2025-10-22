@@ -4,7 +4,7 @@ CREATE DATABASE granja_abejas IF NOT EXISTS;
 
 DROP TABLE IF EXISTS clientes;
 CREATE TABLE clientes  (
-	id_cliente SERIAL PRIMARY KEY,
+	id_cliente SERIAL PRIMARY KEY ON DELETE CASCADE,
 	nombre VARCHAR(100) NOT NULL, 
 	telefono VARCHAR(20),
 	ubicacion TEXT

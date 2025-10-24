@@ -49,4 +49,5 @@ let ENV = () => {
     return salida;
 }
 
-export default ENV();
+ENV = ENV();
+export default ENV;

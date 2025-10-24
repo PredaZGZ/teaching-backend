@@ -1,12 +1,8 @@
 import multer from 'multer';
 import path from 'path';
 import ENV from './envLoader.js';
-import fs from 'fs';
 
 //
-if (!fs.existsSync(ENV.CLOUD_STORAGE_PATH)) {
-    fs.mkdirSync(ENV.CLOUD_STORAGE_PATH, { recursive: true }); // mkdir -p
-}
 
 const storage = multer.diskStorage({
 
